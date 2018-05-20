@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Buscador de imagenes</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../css/Loquesea.css}"/>
+    <script th:src="@{../js/jquery-3.2.1.min.js}"></script>
+    <script th:src="@{../js/javaescrip.js}"></script>
+
+</head>
+<body>
+<img th:src="${imagen}"/>
+<form action="/buscador-imagen" method="post">
+     Busqueda: <input type="text" name="FirstName" value="Ejemplo"> </input>
+    <input class= "atun" id="repollo" type="submit" value="Submit"></input>
+</form>
+</body>
+</html>
